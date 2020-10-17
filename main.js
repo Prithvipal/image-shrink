@@ -29,6 +29,7 @@ app.on('ready', ()=>{
 })
 
 const menu = [
+  ...(isMac ? [{role: 'appMenu'}]: [] ),
   {
     label: 'File',
     submenu: [
@@ -39,6 +40,7 @@ const menu = [
     ]
   }
 ]
+
 
 
 app.on('window-all-closed', () => {
